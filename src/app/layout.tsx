@@ -11,11 +11,6 @@ import SecondaryNav from '@/app/components/SecondaryNav'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata: Metadata = {
-  title: 'Queens Road Bank',
-  description: 'Bank developed by Anmol Tiwari',
-}
-
 export default function RootLayout({
   children,
 }: {
@@ -24,6 +19,9 @@ export default function RootLayout({
   const [showSecondaryNav, setShowSecondaryNav] = useState<boolean>(false);
   return (
     <html lang="en">
+      <head>
+        <title>Queens Road Bank: Bank developed by Anmol Tiwari</title>
+      </head>
       <ThemeProvider theme={appTheme}>
       <body className={inter.className}>
         <Container>
