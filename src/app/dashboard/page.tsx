@@ -5,7 +5,7 @@ import { Box, Container, Typography, TextField, Button } from '@mui/material'
 import { MetaMaskSDK } from '@metamask/sdk';
 import detectEthereumProvider from '@metamask/detect-provider';
 
-export const formatBalance = (rawBalance: string) => {
+const formatBalance = (rawBalance: string) => {
     const balance = (parseInt(rawBalance) / 1000000000000000000).toFixed(2)
     return balance
 }
